@@ -1,24 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Onboarding Controller" id="BYZ-38-t0r" customClass="ViewController" customModule="ALPHA_BookStore_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uCz-Nf-Bza"/>
+                    <connections>
+                        <segue destination="JfH-Kt-Nmn" kind="show" identifier="goToSignup" id="79p-Gd-igQ"/>
+                        <segue destination="CYC-kP-9WG" kind="show" identifier="goToLogin" id="BJo-9c-brd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="339" y="134"/>
+        </scene>
+        <!--Login Controller-->
+        <scene sceneID="PiQ-ku-V06">
+            <objects>
+                <viewController title="Login Controller" id="CYC-kP-9WG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="idG-u2-wrV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kVU-Yg-h2f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fNN-To-Jg6"/>
+                    <connections>
+                        <segue destination="9Eu-cC-JkU" kind="show" identifier="goToStore" id="iTt-r1-BDL"/>
+                        <segue destination="J9X-Wg-BCg" kind="show" identifier="goToProfile" id="NjY-es-Hri"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="naW-Hr-2bW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2297" y="-179"/>
+        </scene>
+        <!--Store Controller-->
+        <scene sceneID="eMR-ho-tU6">
+            <objects>
+                <viewController title="Store Controller" id="9Eu-cC-JkU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yUe-gi-iYx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4TK-w1-2xO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bMP-aY-Tad"/>
+                    <connections>
+                        <segue destination="P8U-CY-92Q" kind="show" identifier="goToPay" id="Zat-kI-HWy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3tL-6I-WzY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3380" y="-179"/>
+        </scene>
+        <!--Pay Controller-->
+        <scene sceneID="qTV-qn-3PY">
+            <objects>
+                <viewController title="Pay Controller" id="P8U-CY-92Q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hAe-pz-jhP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nTJ-6m-Uma"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2pv-Y1-ULV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqP-08-La2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4371" y="-179"/>
+        </scene>
+        <!--Profile Controller-->
+        <scene sceneID="hwY-XX-yse">
+            <objects>
+                <viewController title="Profile Controller" id="J9X-Wg-BCg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zYM-fg-3ib">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ias-sB-M3n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WZM-zV-4rC"/>
+                    <connections>
+                        <segue destination="1Ls-73-sEz" kind="show" identifier="goToChangePass" id="eO0-AR-T5f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAr-Yd-7Q1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3738" y="597"/>
+        </scene>
+        <!--Change Password-->
+        <scene sceneID="PBq-ww-H0f">
+            <objects>
+                <viewController title="Change Password" id="1Ls-73-sEz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NRg-p3-o1S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ecs-8G-w0q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8XQ-LG-VE9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96k-qW-RQT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4657" y="578"/>
+        </scene>
+        <!--Signup Controller-->
+        <scene sceneID="uYq-OI-tEi">
+            <objects>
+                <viewController title="Signup Controller" id="JfH-Kt-Nmn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sf0-kY-LL6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ozE-JO-cwk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xRa-5C-f54"/>
+                    <connections>
+                        <segue destination="CYC-kP-9WG" kind="show" id="StM-vr-417"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfj-8L-CvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352" y="494"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="A85-hR-7e3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XVl-iI-6jz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hyo-C7-Urc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6mQ-Ur-Pmm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMI-jf-fAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-638" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="StM-vr-417"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
