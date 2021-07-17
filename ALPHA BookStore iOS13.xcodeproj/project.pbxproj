@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A35932B626A2EC8C00BAD377 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35932B526A2EC8C00BAD377 /* StoreViewController.swift */; };
+		A35932B926A2ECA700BAD377 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35932B826A2ECA700BAD377 /* Book.swift */; };
 		A366311D26A2BD8E00DEA238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366311C26A2BD8E00DEA238 /* AppDelegate.swift */; };
 		A366311F26A2BD8E00DEA238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366311E26A2BD8E00DEA238 /* SceneDelegate.swift */; };
 		A366312126A2BD8E00DEA238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366312026A2BD8E00DEA238 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A35932B526A2EC8C00BAD377 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		A35932B826A2ECA700BAD377 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		A366311926A2BD8E00DEA238 /* ALPHA BookStore iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALPHA BookStore iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A366311C26A2BD8E00DEA238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A366311E26A2BD8E00DEA238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				A366312526A2BD8E00DEA238 /* Assets.xcassets */,
 				A366312726A2BD8E00DEA238 /* LaunchScreen.storyboard */,
 				A366312A26A2BD8E00DEA238 /* Info.plist */,
+				A35932B526A2EC8C00BAD377 /* StoreViewController.swift */,
+				A35932B826A2ECA700BAD377 /* Book.swift */,
 			);
 			path = "ALPHA BookStore iOS13";
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35932B626A2EC8C00BAD377 /* StoreViewController.swift in Sources */,
 				A366312126A2BD8E00DEA238 /* ViewController.swift in Sources */,
 				A366311D26A2BD8E00DEA238 /* AppDelegate.swift in Sources */,
+				A35932B926A2ECA700BAD377 /* Book.swift in Sources */,
 				A366311F26A2BD8E00DEA238 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
