@@ -14,13 +14,6 @@ class StoreViewController: UIViewController {
     var bookManager = BookManager()
     
     var books = [BookData]()
-    
-//    var books: [BookData] = [
-//        BookData(title: "Unlocking Android", pageCount: 416	, thumbnailUrl: "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg", authors: ["W. Frank Ableson", "Charlie Collins", "Robi Sen"]),
-//        BookData(title: "Android in Action, Second Edition", pageCount: 592, thumbnailUrl: "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg", authors: ["W. Frank Ableson", "Robi Sen"]),
-//        BookData(title: "Specification by Example", pageCount: 123, thumbnailUrl: "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg", authors: ["Gojko Adzic"])
-//
-//    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +30,7 @@ class StoreViewController: UIViewController {
 extension StoreViewController: BookManagerDelegate {
     func fetchBookData(_ bookManager: BookManager, bookData: [BookData]) {
         DispatchQueue.main.async {
-            self.books.append(contentsOf: bookData[0..<20])
+            self.books.append(contentsOf: bookData[20..<40])
             self.tableView.reloadData()
         }
     }
@@ -77,6 +70,10 @@ extension StoreViewController: UITableViewDataSource {
 
 extension StoreViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+        } else {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        }
     }
 }
