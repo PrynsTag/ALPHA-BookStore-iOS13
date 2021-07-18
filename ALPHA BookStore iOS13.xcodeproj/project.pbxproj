@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A35932B626A2EC8C00BAD377 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35932B526A2EC8C00BAD377 /* StoreViewController.swift */; };
 		A35932B926A2ECA700BAD377 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35932B826A2ECA700BAD377 /* Book.swift */; };
+		A35932C126A2F82D00BAD377 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35932BF26A2F82C00BAD377 /* BookCell.swift */; };
+		A35932C226A2F82D00BAD377 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35932C026A2F82D00BAD377 /* BookCell.xib */; };
 		A366311D26A2BD8E00DEA238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366311C26A2BD8E00DEA238 /* AppDelegate.swift */; };
 		A366311F26A2BD8E00DEA238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366311E26A2BD8E00DEA238 /* SceneDelegate.swift */; };
 		A366312126A2BD8E00DEA238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366312026A2BD8E00DEA238 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		A35932B526A2EC8C00BAD377 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		A35932B826A2ECA700BAD377 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		A35932BF26A2F82C00BAD377 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		A35932C026A2F82D00BAD377 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		A366311926A2BD8E00DEA238 /* ALPHA BookStore iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALPHA BookStore iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A366311C26A2BD8E00DEA238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A366311E26A2BD8E00DEA238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				A366312A26A2BD8E00DEA238 /* Info.plist */,
 				A35932B526A2EC8C00BAD377 /* StoreViewController.swift */,
 				A35932B826A2ECA700BAD377 /* Book.swift */,
+				A35932BF26A2F82C00BAD377 /* BookCell.swift */,
+				A35932C026A2F82D00BAD377 /* BookCell.xib */,
 			);
 			path = "ALPHA BookStore iOS13";
 			sourceTree = "<group>";
@@ -130,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35932C226A2F82D00BAD377 /* BookCell.xib in Resources */,
 				A366312926A2BD8E00DEA238 /* LaunchScreen.storyboard in Resources */,
 				A366312626A2BD8E00DEA238 /* Assets.xcassets in Resources */,
 				A366312426A2BD8E00DEA238 /* Main.storyboard in Resources */,
@@ -143,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35932C126A2F82D00BAD377 /* BookCell.swift in Sources */,
 				A35932B626A2EC8C00BAD377 /* StoreViewController.swift in Sources */,
 				A366312126A2BD8E00DEA238 /* ViewController.swift in Sources */,
 				A366311D26A2BD8E00DEA238 /* AppDelegate.swift in Sources */,

@@ -8,7 +8,12 @@
 import UIKit
 
 class BookCell: UITableViewCell {
-
+    @IBOutlet weak var bookImage: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var author: UILabel!
+    @IBOutlet weak var page: UILabel!
+    @IBOutlet weak var price: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
