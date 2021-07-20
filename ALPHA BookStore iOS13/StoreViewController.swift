@@ -14,6 +14,7 @@ class StoreViewController: UIViewController {
     var bookManager = BookManager()
     
     var books = [BookData]()
+    var selectedBooks = [BookData]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,17 @@ class StoreViewController: UIViewController {
         
         bookManager.delegate = self
         bookManager.fetchBook()
+    }
+    
+    @IBAction func checkoutButtonClicked(_ sender: Any) {
+        performSegue(withIdentifier: "goToPay", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToPay" {
+            let destinationVC = segue.destination as! PayViewController
+            destinationVC.selectedBooks = selectedBooks
+        }
     }
 }
 
@@ -74,6 +86,10 @@ extension StoreViewController: UITableViewDelegate {
             tableView.cellForRow(at: indexPath)?.accessoryType = .none
         } else {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        }
+        
+        if tableView.cellForRow(at: indexPath)?.isSelected != false {
+            selectedBooks.append(books[indexPath.row])
         }
     }
 }
