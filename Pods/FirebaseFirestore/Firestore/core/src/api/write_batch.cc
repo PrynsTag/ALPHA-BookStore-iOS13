@@ -31,6 +31,7 @@ namespace firestore {
 namespace api {
 
 using model::DeleteMutation;
+using model::Mutation;
 using model::Precondition;
 using util::ThrowIllegalState;
 using util::ThrowInvalidArgument;
@@ -79,8 +80,8 @@ void WriteBatch::VerifyNotCommitted() const {
 void WriteBatch::ValidateReference(const DocumentReference& reference) const {
   if (reference.firestore() != firestore_) {
     ThrowInvalidArgument(
-        "Provided document reference is from a different Cloud Firestore "
-        "instance.");
+        "Provided document reference is from a different "
+        "Firestore instance.");
   }
 }
 

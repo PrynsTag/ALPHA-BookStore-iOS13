@@ -7,10 +7,13 @@
 
 import Foundation
 
-struct Book {
+struct BookInfo: Codable  {
+    let bookInfo: BookData
+}
+
+struct BookData: Codable {
     let title: String
     let pageCount: Int
-    let thumbnailUrl: String
+    let thumbnailUrl: String?
     let authors: [String]
-    let price: Double
 }
