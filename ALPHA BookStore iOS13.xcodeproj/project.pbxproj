@@ -14,7 +14,7 @@
 		A35932C226A2F82D00BAD377 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35932C026A2F82D00BAD377 /* BookCell.xib */; };
 		A366311D26A2BD8E00DEA238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366311C26A2BD8E00DEA238 /* AppDelegate.swift */; };
 		A366311F26A2BD8E00DEA238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366311E26A2BD8E00DEA238 /* SceneDelegate.swift */; };
-		A366312126A2BD8E00DEA238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366312026A2BD8E00DEA238 /* ViewController.swift */; };
+		A366312126A2BD8E00DEA238 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366312026A2BD8E00DEA238 /* OnboardingViewController.swift */; };
 		A366312426A2BD8E00DEA238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A366312226A2BD8E00DEA238 /* Main.storyboard */; };
 		A366312626A2BD8E00DEA238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A366312526A2BD8E00DEA238 /* Assets.xcassets */; };
 		A366312926A2BD8E00DEA238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A366312726A2BD8E00DEA238 /* LaunchScreen.storyboard */; };
@@ -38,6 +38,9 @@
 		A3AEB43D26A781D8000A34FC /* FirebaseFirestore in Resources */ = {isa = PBXBuildFile; fileRef = A3AEB43226A781D7000A34FC /* FirebaseFirestore */; };
 		A3AEB43E26A781D8000A34FC /* FirebaseCoreDiagnostics in Resources */ = {isa = PBXBuildFile; fileRef = A3AEB43326A781D8000A34FC /* FirebaseCoreDiagnostics */; };
 		A3AEB47526A781F7000A34FC /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = A3AEB44026A781F6000A34FC /* Manifest.lock */; };
+		A3AEB49F26A79245000A34FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AEB49E26A79245000A34FC /* LoginViewController.swift */; };
+		A3AEB4B426A79579000A34FC /* ALPHA BookStore iOS13 in Resources */ = {isa = PBXBuildFile; fileRef = A3AEB4A226A79579000A34FC /* ALPHA BookStore iOS13 */; };
+		A3AEB4B726A7958E000A34FC /* ALPHA BookStore iOS13 in Resources */ = {isa = PBXBuildFile; fileRef = A3AEB4B626A7958E000A34FC /* ALPHA BookStore iOS13 */; };
 		A3E9345E26A713440043A74F /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E9345D26A713440043A74F /* PayViewController.swift */; };
 		ACC4F6BDE445BC1A86A3536D /* Pods_ALPHA_BookStore_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5374899B6EF9C6E886ED5E /* Pods_ALPHA_BookStore_iOS13.framework */; };
 /* End PBXBuildFile section */
@@ -169,7 +172,7 @@
 		A366311926A2BD8E00DEA238 /* ALPHA BookStore iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALPHA BookStore iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A366311C26A2BD8E00DEA238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A366311E26A2BD8E00DEA238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A366312026A2BD8E00DEA238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A366312026A2BD8E00DEA238 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A366312326A2BD8E00DEA238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A366312526A2BD8E00DEA238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A366312826A2BD8E00DEA238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -195,6 +198,9 @@
 		A3AEB43326A781D8000A34FC /* FirebaseCoreDiagnostics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseCoreDiagnostics; path = ../../../../Downloads/FirebaseCoreDiagnostics; sourceTree = "<group>"; };
 		A3AEB44026A781F6000A34FC /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
 		A3AEB44126A781F6000A34FC /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../../../../Downloads/Pods.xcodeproj; sourceTree = "<group>"; };
+		A3AEB49E26A79245000A34FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A3AEB4A226A79579000A34FC /* ALPHA BookStore iOS13 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "ALPHA BookStore iOS13"; sourceTree = "<group>"; };
+		A3AEB4B626A7958E000A34FC /* ALPHA BookStore iOS13 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "ALPHA BookStore iOS13"; sourceTree = "<group>"; };
 		A3E9345D26A713440043A74F /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -270,7 +276,8 @@
 			children = (
 				A366311C26A2BD8E00DEA238 /* AppDelegate.swift */,
 				A366311E26A2BD8E00DEA238 /* SceneDelegate.swift */,
-				A366312026A2BD8E00DEA238 /* ViewController.swift */,
+				A366312026A2BD8E00DEA238 /* OnboardingViewController.swift */,
+				A3AEB4B626A7958E000A34FC /* ALPHA BookStore iOS13 */,
 				A366312226A2BD8E00DEA238 /* Main.storyboard */,
 				A366312526A2BD8E00DEA238 /* Assets.xcassets */,
 				A366312726A2BD8E00DEA238 /* LaunchScreen.storyboard */,
@@ -282,6 +289,8 @@
 				A368D83726A431C6005DEFA7 /* BookManager.swift */,
 				A3119B2726A6EA8E00B6653B /* GoogleService-Info.plist */,
 				A3E9345D26A713440043A74F /* PayViewController.swift */,
+				A3AEB49E26A79245000A34FC /* LoginViewController.swift */,
+				A3AEB4A226A79579000A34FC /* ALPHA BookStore iOS13 */,
 			);
 			path = "ALPHA BookStore iOS13";
 			sourceTree = "<group>";
@@ -505,6 +514,8 @@
 				A3AEB43E26A781D8000A34FC /* FirebaseCoreDiagnostics in Resources */,
 				A3AEB42726A781CA000A34FC /* gRPC-C++ in Resources */,
 				A3AEB43726A781D8000A34FC /* BoringSSL-GRPC in Resources */,
+				A3AEB4B726A7958E000A34FC /* ALPHA BookStore iOS13 in Resources */,
+				A3AEB4B426A79579000A34FC /* ALPHA BookStore iOS13 in Resources */,
 				A3AEB43C26A781D8000A34FC /* Local Podspecs in Resources */,
 				A366312626A2BD8E00DEA238 /* Assets.xcassets in Resources */,
 				A3AEB43B26A781D8000A34FC /* GTMSessionFetcher in Resources */,
@@ -565,9 +576,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3AEB49F26A79245000A34FC /* LoginViewController.swift in Sources */,
 				A35932C126A2F82D00BAD377 /* BookCell.swift in Sources */,
 				A35932B626A2EC8C00BAD377 /* StoreViewController.swift in Sources */,
-				A366312126A2BD8E00DEA238 /* ViewController.swift in Sources */,
+				A366312126A2BD8E00DEA238 /* OnboardingViewController.swift in Sources */,
 				A3E9345E26A713440043A74F /* PayViewController.swift in Sources */,
 				A366311D26A2BD8E00DEA238 /* AppDelegate.swift in Sources */,
 				A368D83826A431C6005DEFA7 /* BookManager.swift in Sources */,
