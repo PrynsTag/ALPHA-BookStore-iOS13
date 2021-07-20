@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		A35932B626A2EC8C00BAD377 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35932B526A2EC8C00BAD377 /* StoreViewController.swift */; };
 		A35932B926A2ECA700BAD377 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35932B826A2ECA700BAD377 /* BookData.swift */; };
 		A35932C126A2F82D00BAD377 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35932BF26A2F82C00BAD377 /* BookCell.swift */; };
 		A35932C226A2F82D00BAD377 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35932C026A2F82D00BAD377 /* BookCell.xib */; };
+=======
+		A3119B2826A6EA8E00B6653B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3119B2726A6EA8E00B6653B /* GoogleService-Info.plist */; };
+>>>>>>> 87aee216d9cddb1eeeefb9537f952b9cc02b55ea
 		A366311D26A2BD8E00DEA238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366311C26A2BD8E00DEA238 /* AppDelegate.swift */; };
 		A366311F26A2BD8E00DEA238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366311E26A2BD8E00DEA238 /* SceneDelegate.swift */; };
 		A366312126A2BD8E00DEA238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A366312026A2BD8E00DEA238 /* ViewController.swift */; };
 		A366312426A2BD8E00DEA238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A366312226A2BD8E00DEA238 /* Main.storyboard */; };
 		A366312626A2BD8E00DEA238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A366312526A2BD8E00DEA238 /* Assets.xcassets */; };
 		A366312926A2BD8E00DEA238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A366312726A2BD8E00DEA238 /* LaunchScreen.storyboard */; };
+<<<<<<< HEAD
 		A368D83826A431C6005DEFA7 /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368D83726A431C6005DEFA7 /* BookManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,16 @@
 		A35932B826A2ECA700BAD377 /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
 		A35932BF26A2F82C00BAD377 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		A35932C026A2F82D00BAD377 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+=======
+		ACC4F6BDE445BC1A86A3536D /* Pods_ALPHA_BookStore_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5374899B6EF9C6E886ED5E /* Pods_ALPHA_BookStore_iOS13.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19EA4F223F1ACD2C5D6C5F76 /* Pods-ALPHA BookStore iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHA BookStore iOS13.release.xcconfig"; path = "Target Support Files/Pods-ALPHA BookStore iOS13/Pods-ALPHA BookStore iOS13.release.xcconfig"; sourceTree = "<group>"; };
+		7D5374899B6EF9C6E886ED5E /* Pods_ALPHA_BookStore_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALPHA_BookStore_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80970C69D4921FF932D3B581 /* Pods-ALPHA BookStore iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHA BookStore iOS13.debug.xcconfig"; path = "Target Support Files/Pods-ALPHA BookStore iOS13/Pods-ALPHA BookStore iOS13.debug.xcconfig"; sourceTree = "<group>"; };
+		A3119B2726A6EA8E00B6653B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+>>>>>>> 87aee216d9cddb1eeeefb9537f952b9cc02b55ea
 		A366311926A2BD8E00DEA238 /* ALPHA BookStore iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALPHA BookStore iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A366311C26A2BD8E00DEA238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A366311E26A2BD8E00DEA238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,17 +56,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC4F6BDE445BC1A86A3536D /* Pods_ALPHA_BookStore_iOS13.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CBA99D720E52108C93087FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D5374899B6EF9C6E886ED5E /* Pods_ALPHA_BookStore_iOS13.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		540DFD26FB0D550251E6C1D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80970C69D4921FF932D3B581 /* Pods-ALPHA BookStore iOS13.debug.xcconfig */,
+				19EA4F223F1ACD2C5D6C5F76 /* Pods-ALPHA BookStore iOS13.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A366311026A2BD8E00DEA238 = {
 			isa = PBXGroup;
 			children = (
 				A366311B26A2BD8E00DEA238 /* ALPHA BookStore iOS13 */,
 				A366311A26A2BD8E00DEA238 /* Products */,
+				540DFD26FB0D550251E6C1D2 /* Pods */,
+				2CBA99D720E52108C93087FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,11 +109,15 @@
 				A366312526A2BD8E00DEA238 /* Assets.xcassets */,
 				A366312726A2BD8E00DEA238 /* LaunchScreen.storyboard */,
 				A366312A26A2BD8E00DEA238 /* Info.plist */,
+<<<<<<< HEAD
 				A35932B526A2EC8C00BAD377 /* StoreViewController.swift */,
 				A35932B826A2ECA700BAD377 /* BookData.swift */,
 				A35932BF26A2F82C00BAD377 /* BookCell.swift */,
 				A35932C026A2F82D00BAD377 /* BookCell.xib */,
 				A368D83726A431C6005DEFA7 /* BookManager.swift */,
+=======
+				A3119B2726A6EA8E00B6653B /* GoogleService-Info.plist */,
+>>>>>>> 87aee216d9cddb1eeeefb9537f952b9cc02b55ea
 			);
 			path = "ALPHA BookStore iOS13";
 			sourceTree = "<group>";
@@ -89,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A366312D26A2BD8E00DEA238 /* Build configuration list for PBXNativeTarget "ALPHA BookStore iOS13" */;
 			buildPhases = (
+				9E919C145CDFAF5FDBB5731D /* [CP] Check Pods Manifest.lock */,
 				A366311526A2BD8E00DEA238 /* Sources */,
 				A366311626A2BD8E00DEA238 /* Frameworks */,
 				A366311726A2BD8E00DEA238 /* Resources */,
+				A3A3BF2EAC6F003E94E30650 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,12 +183,55 @@
 			files = (
 				A35932C226A2F82D00BAD377 /* BookCell.xib in Resources */,
 				A366312926A2BD8E00DEA238 /* LaunchScreen.storyboard in Resources */,
+				A3119B2826A6EA8E00B6653B /* GoogleService-Info.plist in Resources */,
 				A366312626A2BD8E00DEA238 /* Assets.xcassets in Resources */,
 				A366312426A2BD8E00DEA238 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E919C145CDFAF5FDBB5731D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ALPHA BookStore iOS13-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A3BF2EAC6F003E94E30650 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALPHA BookStore iOS13/Pods-ALPHA BookStore iOS13-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALPHA BookStore iOS13/Pods-ALPHA BookStore iOS13-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ALPHA BookStore iOS13/Pods-ALPHA BookStore iOS13-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A366311526A2BD8E00DEA238 /* Sources */ = {
@@ -303,6 +388,7 @@
 		};
 		A366312E26A2BD8E00DEA238 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80970C69D4921FF932D3B581 /* Pods-ALPHA BookStore iOS13.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +407,7 @@
 		};
 		A366312F26A2BD8E00DEA238 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19EA4F223F1ACD2C5D6C5F76 /* Pods-ALPHA BookStore iOS13.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
