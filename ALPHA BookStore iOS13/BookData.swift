@@ -16,4 +16,5 @@ struct BookData: Codable {
     let pageCount: Int
     let thumbnailUrl: String?
     let authors: [String]
+    let price: Int?
 }
