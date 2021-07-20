@@ -65,10 +65,15 @@
                         <viewLayoutGuide key="safeArea" id="4TK-w1-2xO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bMP-aY-Tad"/>
+                    <navigationItem key="navigationItem" id="bMP-aY-Tad">
+                        <barButtonItem key="rightBarButtonItem" title="Checkout" id="Nrk-Ez-FHB">
+                            <connections>
+                                <segue destination="P8U-CY-92Q" kind="show" id="4X2-PY-h8W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="BZe-ha-iiW" id="ceb-9E-yxm"/>
-                        <segue destination="P8U-CY-92Q" kind="show" identifier="goToPay" id="Zat-kI-HWy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tL-6I-WzY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
