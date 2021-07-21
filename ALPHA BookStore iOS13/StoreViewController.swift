@@ -64,7 +64,7 @@ extension StoreViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! BookCell
         
         DispatchQueue.main.async { [self] in
-            if let url = URL(string: books[indexPath.row].thumbnailUrl!) {
+            if let url = URL(string: books[indexPath.row].thumbnailUrl ?? "") {
                 let data = try? Data(contentsOf: url)
                 cell.bookImage.image = UIImage(data: data!)
                 cell.bookImage.contentMode = .scaleToFill
