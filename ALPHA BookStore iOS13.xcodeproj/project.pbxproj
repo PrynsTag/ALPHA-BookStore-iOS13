@@ -39,6 +39,7 @@
 		A3AEB43E26A781D8000A34FC /* FirebaseCoreDiagnostics in Resources */ = {isa = PBXBuildFile; fileRef = A3AEB43326A781D8000A34FC /* FirebaseCoreDiagnostics */; };
 		A3AEB47526A781F7000A34FC /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = A3AEB44026A781F6000A34FC /* Manifest.lock */; };
 		A3AEB49F26A79245000A34FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AEB49E26A79245000A34FC /* LoginViewController.swift */; };
+		A3E8A71C26A81BB8006A2067 /* PaymentModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E8A71B26A81BB8006A2067 /* PaymentModal.swift */; };
 		A3E9345E26A713440043A74F /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E9345D26A713440043A74F /* PayViewController.swift */; };
 		ACC4F6BDE445BC1A86A3536D /* Pods_ALPHA_BookStore_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5374899B6EF9C6E886ED5E /* Pods_ALPHA_BookStore_iOS13.framework */; };
 /* End PBXBuildFile section */
@@ -197,6 +198,7 @@
 		A3AEB44026A781F6000A34FC /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
 		A3AEB44126A781F6000A34FC /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../../../../Downloads/Pods.xcodeproj; sourceTree = "<group>"; };
 		A3AEB49E26A79245000A34FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A3E8A71B26A81BB8006A2067 /* PaymentModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModal.swift; sourceTree = "<group>"; };
 		A3E9345D26A713440043A74F /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,6 +287,7 @@
 				A3119B2726A6EA8E00B6653B /* GoogleService-Info.plist */,
 				A3E9345D26A713440043A74F /* PayViewController.swift */,
 				A3AEB49E26A79245000A34FC /* LoginViewController.swift */,
+				A3E8A71B26A81BB8006A2067 /* PaymentModal.swift */,
 			);
 			path = "ALPHA BookStore iOS13";
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				A35932C126A2F82D00BAD377 /* BookCell.swift in Sources */,
 				A35932B626A2EC8C00BAD377 /* StoreViewController.swift in Sources */,
 				A366312126A2BD8E00DEA238 /* OnboardingViewController.swift in Sources */,
+				A3E8A71C26A81BB8006A2067 /* PaymentModal.swift in Sources */,
 				A3E9345E26A713440043A74F /* PayViewController.swift in Sources */,
 				A366311D26A2BD8E00DEA238 /* AppDelegate.swift in Sources */,
 				A368D83826A431C6005DEFA7 /* BookManager.swift in Sources */,
