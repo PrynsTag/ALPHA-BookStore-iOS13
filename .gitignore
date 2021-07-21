@@ -95,3 +95,6 @@ iOSInjectionProject/
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# AppCode Files
+.idea/
