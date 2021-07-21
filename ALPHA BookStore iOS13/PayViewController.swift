@@ -10,6 +10,7 @@ import UIKit
 class PayViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var checkNoItems: UILabel!
     
     var selectedBooks: [BookData]!
     var sumOfBook: Int = 0
@@ -20,6 +21,14 @@ class PayViewController: UIViewController {
         tableView.register(UINib(nibName: "BookCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         tableView.allowsSelection = false
     }
+    
+    @IBAction func payButtonPressed(_ sender: Any) {
+        DispatchQueue.main.async { [self] in
+            selectedBooks.removeAll()
+            checkNoItems.text = "Add to cart to buy items!"
+            tableView.reloadData()
+        }
+    }      
 }
 
 extension PayViewController: UITableViewDataSource {
