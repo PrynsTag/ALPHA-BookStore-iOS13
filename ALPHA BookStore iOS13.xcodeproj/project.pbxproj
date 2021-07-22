@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C21FB4B2717D84AD1B3D8DC /* Pods_ALPHA_BookStore_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3BC099F121BF81B5D82AF0 /* Pods_ALPHA_BookStore_iOS13.framework */; };
+		4934A50426A85E69004BFEBB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934A50326A85E69004BFEBB /* SignUpViewController.swift */; };
+		4934A54E26A8671E004BFEBB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934A54D26A8671E004BFEBB /* ProfileViewController.swift */; };
+		4934A57926A86B47004BFEBB /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934A57826A86B47004BFEBB /* PasswordViewController.swift */; };
 		A3119B2826A6EA8E00B6653B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3119B2726A6EA8E00B6653B /* GoogleService-Info.plist */; };
 		A35932B626A2EC8C00BAD377 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35932B526A2EC8C00BAD377 /* StoreViewController.swift */; };
 		A35932B926A2ECA700BAD377 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35932B826A2ECA700BAD377 /* BookData.swift */; };
@@ -41,7 +45,6 @@
 		A3AEB49F26A79245000A34FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AEB49E26A79245000A34FC /* LoginViewController.swift */; };
 		A3E8A71C26A81BB8006A2067 /* PaymentModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E8A71B26A81BB8006A2067 /* PaymentModal.swift */; };
 		A3E9345E26A713440043A74F /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E9345D26A713440043A74F /* PayViewController.swift */; };
-		ACC4F6BDE445BC1A86A3536D /* Pods_ALPHA_BookStore_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5374899B6EF9C6E886ED5E /* Pods_ALPHA_BookStore_iOS13.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,9 +163,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19EA4F223F1ACD2C5D6C5F76 /* Pods-ALPHA BookStore iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHA BookStore iOS13.release.xcconfig"; path = "Target Support Files/Pods-ALPHA BookStore iOS13/Pods-ALPHA BookStore iOS13.release.xcconfig"; sourceTree = "<group>"; };
-		7D5374899B6EF9C6E886ED5E /* Pods_ALPHA_BookStore_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALPHA_BookStore_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80970C69D4921FF932D3B581 /* Pods-ALPHA BookStore iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHA BookStore iOS13.debug.xcconfig"; path = "Target Support Files/Pods-ALPHA BookStore iOS13/Pods-ALPHA BookStore iOS13.debug.xcconfig"; sourceTree = "<group>"; };
+		29ABE56E3DE090832A9BDE3D /* Pods-ALPHA BookStore iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHA BookStore iOS13.release.xcconfig"; path = "Target Support Files/Pods-ALPHA BookStore iOS13/Pods-ALPHA BookStore iOS13.release.xcconfig"; sourceTree = "<group>"; };
+		4934A50326A85E69004BFEBB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4934A54D26A8671E004BFEBB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4934A57826A86B47004BFEBB /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		8B1DE1734B315E670C6775E2 /* Pods-ALPHA BookStore iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPHA BookStore iOS13.debug.xcconfig"; path = "Target Support Files/Pods-ALPHA BookStore iOS13/Pods-ALPHA BookStore iOS13.debug.xcconfig"; sourceTree = "<group>"; };
+		9B3BC099F121BF81B5D82AF0 /* Pods_ALPHA_BookStore_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALPHA_BookStore_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3119B2726A6EA8E00B6653B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A35932B526A2EC8C00BAD377 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		A35932B826A2ECA700BAD377 /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
@@ -207,17 +213,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACC4F6BDE445BC1A86A3536D /* Pods_ALPHA_BookStore_iOS13.framework in Frameworks */,
+				1C21FB4B2717D84AD1B3D8DC /* Pods_ALPHA_BookStore_iOS13.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2CBA99D720E52108C93087FD /* Frameworks */ = {
+		0E4EF9E6E553AA6CC5EE1E00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D5374899B6EF9C6E886ED5E /* Pods_ALPHA_BookStore_iOS13.framework */,
+				9B3BC099F121BF81B5D82AF0 /* Pods_ALPHA_BookStore_iOS13.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,8 +251,8 @@
 				A3AEB41F26A781CA000A34FC /* nanopb */,
 				A3AEB41D26A781C9000A34FC /* PromisesObjC */,
 				A3AEB41B26A781C9000A34FC /* Target Support Files */,
-				80970C69D4921FF932D3B581 /* Pods-ALPHA BookStore iOS13.debug.xcconfig */,
-				19EA4F223F1ACD2C5D6C5F76 /* Pods-ALPHA BookStore iOS13.release.xcconfig */,
+				8B1DE1734B315E670C6775E2 /* Pods-ALPHA BookStore iOS13.debug.xcconfig */,
+				29ABE56E3DE090832A9BDE3D /* Pods-ALPHA BookStore iOS13.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -257,7 +263,7 @@
 				A366311B26A2BD8E00DEA238 /* ALPHA BookStore iOS13 */,
 				A366311A26A2BD8E00DEA238 /* Products */,
 				540DFD26FB0D550251E6C1D2 /* Pods */,
-				2CBA99D720E52108C93087FD /* Frameworks */,
+				0E4EF9E6E553AA6CC5EE1E00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,6 +294,9 @@
 				A3E9345D26A713440043A74F /* PayViewController.swift */,
 				A3AEB49E26A79245000A34FC /* LoginViewController.swift */,
 				A3E8A71B26A81BB8006A2067 /* PaymentModal.swift */,
+				4934A50326A85E69004BFEBB /* SignUpViewController.swift */,
+				4934A54D26A8671E004BFEBB /* ProfileViewController.swift */,
+				4934A57826A86B47004BFEBB /* PasswordViewController.swift */,
 			);
 			path = "ALPHA BookStore iOS13";
 			sourceTree = "<group>";
@@ -322,11 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A366312D26A2BD8E00DEA238 /* Build configuration list for PBXNativeTarget "ALPHA BookStore iOS13" */;
 			buildPhases = (
-				9E919C145CDFAF5FDBB5731D /* [CP] Check Pods Manifest.lock */,
+				22F8106FD3DCD623C0618505 /* [CP] Check Pods Manifest.lock */,
 				A366311526A2BD8E00DEA238 /* Sources */,
 				A366311626A2BD8E00DEA238 /* Frameworks */,
 				A366311726A2BD8E00DEA238 /* Resources */,
-				A3A3BF2EAC6F003E94E30650 /* [CP] Embed Pods Frameworks */,
+				9C61DCE4F98D1FEEA60A1661 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -525,7 +534,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9E919C145CDFAF5FDBB5731D /* [CP] Check Pods Manifest.lock */ = {
+		22F8106FD3DCD623C0618505 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -547,7 +556,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A3A3BF2EAC6F003E94E30650 /* [CP] Embed Pods Frameworks */ = {
+		9C61DCE4F98D1FEEA60A1661 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -571,11 +580,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4934A50426A85E69004BFEBB /* SignUpViewController.swift in Sources */,
 				A3AEB49F26A79245000A34FC /* LoginViewController.swift in Sources */,
 				A35932C126A2F82D00BAD377 /* BookCell.swift in Sources */,
 				A35932B626A2EC8C00BAD377 /* StoreViewController.swift in Sources */,
 				A366312126A2BD8E00DEA238 /* OnboardingViewController.swift in Sources */,
 				A3E8A71C26A81BB8006A2067 /* PaymentModal.swift in Sources */,
+				4934A57926A86B47004BFEBB /* PasswordViewController.swift in Sources */,
+				4934A54E26A8671E004BFEBB /* ProfileViewController.swift in Sources */,
 				A3E9345E26A713440043A74F /* PayViewController.swift in Sources */,
 				A366311D26A2BD8E00DEA238 /* AppDelegate.swift in Sources */,
 				A368D83826A431C6005DEFA7 /* BookManager.swift in Sources */,
@@ -724,7 +736,7 @@
 		};
 		A366312E26A2BD8E00DEA238 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80970C69D4921FF932D3B581 /* Pods-ALPHA BookStore iOS13.debug.xcconfig */;
+			baseConfigurationReference = 8B1DE1734B315E670C6775E2 /* Pods-ALPHA BookStore iOS13.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -743,7 +755,7 @@
 		};
 		A366312F26A2BD8E00DEA238 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19EA4F223F1ACD2C5D6C5F76 /* Pods-ALPHA BookStore iOS13.release.xcconfig */;
+			baseConfigurationReference = 29ABE56E3DE090832A9BDE3D /* Pods-ALPHA BookStore iOS13.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
