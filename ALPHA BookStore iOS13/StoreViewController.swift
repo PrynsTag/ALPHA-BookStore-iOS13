@@ -15,6 +15,7 @@ class StoreViewController: UIViewController {
     
     var books = [BookData]()
     var selectedBooks = [BookData]()
+    var username: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +35,18 @@ class StoreViewController: UIViewController {
         performSegue(withIdentifier: "goToPay", sender: self)
     }
     
+    @IBAction func profilePressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToProfile", sender: self)
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToPay" {
             let destinationVC = segue.destination as! PayViewController
             destinationVC.selectedBooks = selectedBooks
+        } else if segue.identifier == "goToProfile" {
+            let destinationVC = segue.destination as! ProfileViewController
+            destinationVC.username = username
         }
     }
 }
