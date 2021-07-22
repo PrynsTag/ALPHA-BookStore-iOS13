@@ -120,7 +120,6 @@
                                 <state key="normal" title="Signup"/>
                                 <connections>
                                     <action selector="signupPressed:" destination="CYC-kP-9WG" eventType="touchUpInside" id="PGh-Tc-fdD"/>
-                                    <segue destination="JfH-Kt-Nmn" kind="show" id="xzV-vU-cVK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4H8-gQ-qTG">
@@ -141,7 +140,7 @@
                         <outlet property="emailTextField" destination="zdH-Eb-SZg" id="Ins-iT-r3y"/>
                         <outlet property="passwordTextField" destination="v6M-iM-yBg" id="PxT-b5-n10"/>
                         <segue destination="9Eu-cC-JkU" kind="show" identifier="goToStore" id="iTt-r1-BDL"/>
-                        <segue destination="J9X-Wg-BCg" kind="show" identifier="goToProfile" id="NjY-es-Hri"/>
+                        <segue destination="J9X-Wg-BCg" kind="show" identifier="goToProfile" id="HW6-Kd-Jsl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="naW-Hr-2bW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -333,12 +332,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vHf-FI-hQD">
-                                <rect key="frame" x="50" y="466" width="314" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nDX-eD-9sd">
                                 <rect key="frame" x="50" y="574" width="314" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -353,7 +346,8 @@
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="changePasswordPressed:" destination="J9X-Wg-BCg" eventType="touchUpInside" id="T6u-RL-3we"/>
+                                    <action selector="changePressed:" destination="J9X-Wg-BCg" eventType="touchUpInside" id="3sh-dl-X1b"/>
+                                    <segue destination="1Ls-73-sEz" kind="show" identifier="profileToPass" id="A58-XF-z4g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCb-TT-pYQ">
@@ -368,6 +362,12 @@
                                     <action selector="signupPressed:" destination="JfH-Kt-Nmn" eventType="touchUpInside" id="Sda-q2-oYT"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vHf-FI-hQD">
+                                <rect key="frame" x="50" y="465" width="314" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ias-sB-M3n"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -377,12 +377,11 @@
                         <outlet property="emailTextField" destination="ipm-Fg-KFv" id="d6D-2V-69Z"/>
                         <outlet property="nameTextField" destination="vHf-FI-hQD" id="s5W-UP-6ei"/>
                         <outlet property="usernameTextField" destination="nDX-eD-9sd" id="ubU-Yi-8PP"/>
-                        <segue destination="1Ls-73-sEz" kind="show" identifier="goToChangePass" id="eO0-AR-T5f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAr-Yd-7Q1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3737.68115942029" y="596.65178571428567"/>
+            <point key="canvasLocation" x="4647.826086956522" y="596.65178571428567"/>
         </scene>
         <!--Change Password-->
         <scene sceneID="PBq-ww-H0f">
@@ -463,14 +462,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96k-qW-RQT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4656.521739130435" y="577.90178571428567"/>
+            <point key="canvasLocation" x="5566.666666666667" y="577.90178571428567"/>
         </scene>
         <!--Signup Controller-->
         <scene sceneID="uYq-OI-tEi">
             <objects>
                 <viewController title="Signup Controller" id="JfH-Kt-Nmn" customClass="SignUpViewController" customModule="ALPHA_BookStore_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sf0-kY-LL6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ye-Ug-hKs">
@@ -513,7 +512,7 @@
                                         <rect key="frame" x="50" y="182" width="314" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -540,6 +539,9 @@
                                         <state key="normal" title="BACK">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="CYC-kP-9WG" kind="show" id="XZQ-tn-mok"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -562,6 +564,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="CYC-kP-9WG" kind="show" identifier="loginToSignUp" id="H1e-df-UCO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -574,8 +579,8 @@
                     <connections>
                         <outlet property="emailTextField" destination="Vft-pb-JFz" id="z1c-eW-RFI"/>
                         <outlet property="nameTextField" destination="733-BS-otO" id="Epu-yD-2sf"/>
-                        <outlet property="passwordTextField" destination="QGX-E9-45p" id="c0K-Xq-iL9"/>
-                        <outlet property="usernameTextField" destination="QGX-E9-45p" id="Ghb-pb-ohz"/>
+                        <outlet property="passwordTextField" destination="QGX-E9-45p" id="Id1-RI-Lrz"/>
+                        <outlet property="usernameTextField" destination="0Oe-sV-csY" id="dgu-Hc-51q"/>
                         <segue destination="CYC-kP-9WG" kind="show" identifier="signUpToLogin" id="StM-vr-417"/>
                     </connections>
                 </viewController>
@@ -603,7 +608,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="StM-vr-417"/>
+        <segue reference="H1e-df-UCO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book-lover" width="666.66668701171875" height="666.66668701171875"/>
