@@ -16,13 +16,13 @@ class SignUpViewController: UIViewController{
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    var ref: DatabaseReference! = Database.database().reference()
+    var ref: DatabaseReference! = Database.database(url: "https://alpha-bookstore-ios-default-rtdb.asia-southeast1.firebasedatabase.app/").reference()
     
     @IBAction func signupPressed(_ sender: UIButton) {
         
         let name = nameTextField.text!
         let email = emailTextField.text!
-        let username = emailTextField.text!
+        let username = usernameTextField.text!
         let password = passwordTextField.text!
         
         ref.child(username).setValue(
