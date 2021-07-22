@@ -13,14 +13,15 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var usernameLabel: UILabel!
     
-    let username: String = "test"
+    let username: String? = nil
     
-    var ref: DatabaseReference! = Database.database().reference()
+    var ref: DatabaseReference! = Database.database(url: "https://alpha-bookstore-ios-default-rtdb.asia-southeast1.firebasedatabase.app/").reference()
     
     override func viewDidLoad() {
-        ref.child(username).observe(.value, with: { snapshot in
+        
+        ref.child(username!).observe(.value, with: { snapshot in
             if let dictionary = snapshot.value as? [String: Any] {
                 let name = dictionary["name"] as! String
                 let email = dictionary["email"] as! String
@@ -28,27 +29,34 @@ class ProfileViewController: UIViewController {
                 
                 self.nameTextField.text = name
                 self.emailTextField.text = email
-                self.usernameTextField.text = username
+                self.usernameLabel.text = username
             }
         })
     }
     
-    @IBAction func signupPressed(_ sender: UIButton) {
+    @IBAction func updatePressed(_ sender: UIButton) {
         
-        let name = nameTextField.text!
-        let email = emailTextField.text!
-        let username = usernameTextField.text!
+        let new_name = nameTextField.text!
+        let new_email = emailTextField.text!
+        let username = usernameLabel.text!
         
         ref.child(username).updateChildValues(
             [
-                "name": name,
-                "email": email,
-                "username": username
+                "name": new_name,
+                "email": new_email
             ]
         )
     }
     
-    @IBAction func changePasswordPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToChangePass", sender: self)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "profileToPass" {
+            let vc = segue.destination as? PasswordViewController
+            vc?.username = username
+        }
+    }
+    
+    @IBAction func changePressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "profileToPass", sender: self)
     }
 }
