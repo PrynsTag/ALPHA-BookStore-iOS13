@@ -16,9 +16,13 @@ class PasswordViewController: UIViewController{
     @IBOutlet weak var newPasswordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     
-    let username: String = "test"
+    var username: String?
     
-    var ref: DatabaseReference! = Database.database().reference()
+    override func viewDidLoad() {
+        print(username!)
+    }
+    
+    var ref: DatabaseReference! = Database.database(url: "https://alpha-bookstore-ios-default-rtdb.asia-southeast1.firebasedatabase.app/").reference()
     
     @IBAction func changePressed(_ sender: UIButton) {
         
@@ -28,18 +32,17 @@ class PasswordViewController: UIViewController{
         
         if newPass == confirmPass {
             
-            ref.child(username).observe(.value, with: { snapshot in
+            ref.child(username!).observe(.value, with: { snapshot in
                 if let dictionary = snapshot.value as? [String: Any] {
                     let db_password = dictionary["password"] as! String
                     
                     if db_password == currPass {
-                        changePass(funcRef: self.ref, funcUsername: self.username, funcPassword: newPass)
+                        changePass(funcRef: self.ref, funcUsername: self.username!, funcPassword: newPass)
                     } else {
                         print("Incorrect Password")
                     }
                 }
             })
-            
         } else {
             print("New Password and Confirm Password do not match")
         }
