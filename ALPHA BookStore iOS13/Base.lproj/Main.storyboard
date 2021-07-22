@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XVl-iI-6jz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -95,13 +96,13 @@
                                     <action selector="loginPressed:" destination="CYC-kP-9WG" eventType="touchUpInside" id="qQn-F8-ENu"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdH-Eb-SZg">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="JC" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdH-Eb-SZg">
                                 <rect key="frame" x="50" y="298" width="314" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6M-iM-yBg">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123123" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6M-iM-yBg">
                                 <rect key="frame" x="50" y="367" width="314" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -137,8 +138,8 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="emailTextField" destination="zdH-Eb-SZg" id="Ins-iT-r3y"/>
                         <outlet property="passwordTextField" destination="v6M-iM-yBg" id="PxT-b5-n10"/>
+                        <outlet property="usernameTextField" destination="zdH-Eb-SZg" id="Ins-iT-r3y"/>
                         <segue destination="9Eu-cC-JkU" kind="show" identifier="goToStore" id="iTt-r1-BDL"/>
                         <segue destination="J9X-Wg-BCg" kind="show" identifier="goToProfile" id="HW6-Kd-Jsl"/>
                     </connections>
@@ -178,11 +179,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bMP-aY-Tad">
-                        <barButtonItem key="rightBarButtonItem" title="Checkout" id="RoZ-Z6-pUr">
-                            <connections>
-                                <action selector="checkoutButtonClicked:" destination="9Eu-cC-JkU" id="7KA-Lx-nXV"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Checkout" id="RoZ-Z6-pUr">
+                                <connections>
+                                    <action selector="checkoutButtonClicked:" destination="9Eu-cC-JkU" id="7KA-Lx-nXV"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Profile" id="suH-J3-QIh">
+                                <connections>
+                                    <action selector="profilePressed:" destination="9Eu-cC-JkU" id="7yN-YT-o7m"/>
+                                    <segue destination="J9X-Wg-BCg" kind="show" identifier="goToProfile" id="UXY-34-Mjc"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="LAO-FZ-wyV" id="5Rc-4g-Tfp"/>
@@ -368,15 +377,21 @@
                                     <segue destination="1Ls-73-sEz" kind="show" identifier="profileToPass" id="A58-XF-z4g"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXk-h4-zfd">
+                                <rect key="frame" x="174" y="431" width="67" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ias-sB-M3n"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="WZM-zV-4rC"/>
                     <connections>
-                        <outlet property="emailTextField" destination="ipm-Fg-KFv" id="d6D-2V-69Z"/>
-                        <outlet property="nameTextField" destination="vHf-FI-hQD" id="s5W-UP-6ei"/>
-                        <outlet property="usernameLabel" destination="Fxk-Uw-0eb" id="HsU-EI-GWh"/>
+                        <outlet property="usernameLabel" destination="sXk-h4-zfd" id="8zO-gt-Uno"/>
+                        <segue destination="1Ls-73-sEz" kind="show" identifier="goToChangePass" id="eO0-AR-T5f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAr-Yd-7Q1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -469,7 +484,7 @@
             <objects>
                 <viewController title="Signup Controller" id="JfH-Kt-Nmn" customClass="SignUpViewController" customModule="ALPHA_BookStore_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sf0-kY-LL6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ye-Ug-hKs">
